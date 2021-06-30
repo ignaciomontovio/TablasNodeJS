@@ -1,30 +1,7 @@
 const { crearArchivo } = require('./helpers/multiplicar');
+const argv = require('./config/yargs.js');
 console.clear();
 
  crearArchivo(argv.base,argv.listar)
-    .then(nombreArchivo => console.log(nombreArchivo,'Creado'))
+    .then(nombreArchivo => console.log(nombreArchivo.red,'Creado'))
     .catch(err => console.log(err));
-
-
-// console.log(process.argv);
-// console.log(argv);
-
-
-
-
-
-
-
-
-
-// console.log(process.argv);
-// const [,,arg3] = process.argv;
-// const [,base] = arg3.split('=');
-// console.log(base);
-
-
-
-
-// crearArchivo(base)
-//     .then(nombreArchivo => console.log(nombreArchivo,'Creado'))
-//     .catch(err => console.log(err));

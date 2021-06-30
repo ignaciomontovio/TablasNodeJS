@@ -18,3 +18,5 @@ const argv = require('yargs')
                 return  true;
             })
 .argv;
+
+module.exports= argv;
